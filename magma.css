@@ -1,13 +1,25 @@
 :root {
-  background: magenta;
-  color: black;
+  transition: 360ms;
+  background: #111;
+  color: magenta;
 }
 
 :any-link {
+  transition: 180ms;
   color: inherit;
+  text-decoration-style: wavy;
 }
 
 ::selection {
-  background: black;
-  color: magenta;
+  background: turquoise;
+  color: #111;
+}
+
+:focus {
+  text-decoration-style: solid;
+  outline: thick groove;
+}
+
+:hover {
+  text-decoration-style: double;
 }
